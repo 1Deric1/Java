@@ -3,29 +3,37 @@ package ExecicioClass;
 public class Fatura {
     public int quantidade;
     public double preco;
-    public String numero;
+    public int numero;
     public String descricao;
 
-    public Fatura(int quantidade, double preco, String numero, String descricao) {
+
+    public Fatura(int quantidade, double preco, int numero, String descricao) {
         this.quantidade = quantidade;
         this.preco = preco;
         this.numero = numero;
         this.descricao = descricao;
     }
 
+    public Fatura() {
+
+    }
+
     public double getTotalFatura(){
         if (preco < 0 ){
             System.out.println("Seu saldo total e igual a 0");
         }
+        if(quantidade<0){
+            System.out.println("Sua quantidade atual e zero");
+        }
         double fatura = preco * quantidade;
-        return preco;
+        return fatura;
     }
 
-    public String getNumero() {
+    public int getNumero() {
         return numero;
     }
 
-    public void setNumero(String numero) {
+    public void setNumero(int numero) {
         this.numero = numero;
     }
 
