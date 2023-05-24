@@ -11,7 +11,7 @@
  
  */
 
-package ComandosDecisaoJava;
+package Senai.Aula1;
 
 import javax.swing.JOptionPane;
 
